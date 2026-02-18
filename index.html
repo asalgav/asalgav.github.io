@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Adrián Salas — Technical Lead specialising in API Integration, Distributed Systems, and Messaging Architecture in Healthcare. 15+ years experience with Java, Spring Boot, and microservices.">
+  <title>Adrián Salas — Software Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ── LANG SWITCHER ── -->
+  <div id="lang-bar">
+    <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+    <button class="lang-btn"        id="btn-es" onclick="setLang('es')">ES</button>
+  </div>
+
+  <!-- ── SIDEBAR NAV ── -->
+  <nav id="sidebar">
+    <div>
+      <div class="nav-logo">
+        <span data-i18n="navRole">Software Engineer</span>
+        Adrián Salas
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero"       class="active"><span class="dot"></span><span data-i18n="navHome">Home</span></a></li>
+        <li><a href="#about">               <span class="dot"></span><span data-i18n="navAbout">About</span></a></li>
+        <li><a href="#experience">          <span class="dot"></span><span data-i18n="navExperience">Experience</span></a></li>
+        <li><a href="#skills">              <span class="dot"></span><span data-i18n="navSkills">Skills</span></a></li>
+        <li><a href="#projects">            <span class="dot"></span><span data-i18n="navProjects">Projects</span></a></li>
+        <li><a href="#hobbies">             <span class="dot"></span><span data-i18n="navHobbies">Hobbies</span></a></li>
+      </ul>
+    </div>
+    <div class="nav-social">
+      <a href="https://github.com/asalgav" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/asalgav" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:asalgav@gmail.com">Email</a>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE NAV ── -->
+  <nav id="mobile-nav">
+    <a href="#hero"       data-i18n="navHome">Home</a>
+    <a href="#about"      data-i18n="navAbout">About</a>
+    <a href="#experience" data-i18n="navExperience">Exp.</a>
+    <a href="#skills"     data-i18n="navSkills">Skills</a>
+    <a href="#projects"   data-i18n="navProjects">Work</a>
+    <a href="#hobbies"    data-i18n="navHobbies">More</a>
+  </nav>
+
+  <!-- ════════════════════════════════════════════
+       MAIN
+       ════════════════════════════════════════════ -->
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="sec-label" data-i18n="heroLabel">01 — Welcome</div>
+      <div class="subtitle"  data-i18n="heroStatus">Available for opportunities</div>
+      <h1 data-i18n="heroHeading"><em>Crafting</em> elegant<br>software.</h1>
+      <p class="tagline" data-i18n="heroTagline">
+        I'm a software engineer passionate about building clean, scalable systems and meaningful digital experiences.
+      </p>
+      <a href="#about" class="hero-cta" data-i18n="heroCta">Explore my profile</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="sec-label" data-i18n="aboutLabel">02 — About me</div>
+      <div class="about-grid">
+        <div>
+          <h2 data-i18n="aboutHeading">Hello, I'm <em>Adrián Salas</em>.</h2>
+          <p data-i18n="aboutP1">
+            Based in the Málaga area, I work at the intersection of software engineering and product thinking.
+            With over X years of experience, I've contributed to projects ranging from early-stage startups to large-scale systems.
+          </p>
+          <p data-i18n="aboutP2">
+            I care deeply about code quality, developer experience, and the human side of technology.
+            When I'm not writing code, you'll find me behind a camera or exploring the outdoors.
+          </p>
+        </div>
+        <div class="avatar-wrap">
+          <!--
+            TO ADD YOUR PHOTO:
+            1. Place your image in assets/img/ (e.g. assets/img/photo.jpg)
+            2. Replace the div below with:
+               <img src="assets/img/photo.jpg" alt="Adrián Salas" class="avatar-photo">
+          -->
+          <div class="avatar-placeholder">
+            <span data-i18n="avatarAlt">Your<br>Photo<br>Here</span>
+          </div>
+          <div class="avatar-tag" data-i18n="aboutStatus">Open to work</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="sec-label" data-i18n="expLabel">03 — Experience</div>
+      <h2 data-i18n="expHeading">Where I've <em>worked.</em></h2>
+
+      <div class="exp-item">
+        <div class="exp-date">
+          08/2025 — <span data-i18n="expPresent">Present</span>
+          <span class="company">OneAdvanced</span>
+        </div>
+        <div>
+          <h3 data-i18n="exp1Title">Technical Lead — API Integration & Distributed Systems</h3>
+          <p  data-i18n="exp1Desc">
+            Leading backend development for distributed systems and API-driven architectures in healthcare. Designing and governing RESTful APIs using OpenAPI specifications. Architecting messaging-based integrations using JMS and event-driven patterns.
+          </p>
+          <div class="exp-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">OpenAPI</span>
+            <span class="tag">JMS</span>
+            <span class="tag">AWS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-date">
+          03/2013 — 07/2025
+          <span class="company">INPS — In Practice Systems</span>
+        </div>
+        <div>
+          <h3 data-i18n="exp2Title">Senior Java Backend Engineer / Technical Lead & Scrum Master</h3>
+          <p  data-i18n="exp2Desc">
+            Led and mentored a cross-functional engineering team while maintaining full hands-on development responsibilities. Designed high-availability microservices using Java and Spring Boot. Built integration layers using Apache Camel.
+          </p>
+          <div class="exp-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Apache Camel</span>
+            <span class="tag">ActiveMQ</span>
+            <span class="tag">Jenkins</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-date">
+          2012 — 2013
+          <span class="company">Abengoa — SimosaIT</span>
+        </div>
+        <div>
+          <h3 data-i18n="exp3Title">Java Backend Engineer / BPM Integration Specialist</h3>
+          <p  data-i18n="exp3Desc">
+            Designed and developed backend services using Java and Spring. Integrated enterprise systems using REST/SOAP Web Services. Worked on process automation and BPM-based solutions.
+          </p>
+          <div class="exp-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring</span>
+            <span class="tag">BPM</span>
+            <span class="tag">REST/SOAP</span>
+            <span class="tag">Oracle</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-date">
+          2009 — 2012
+          <span class="company">Sopra Group</span>
+        </div>
+        <div>
+          <h3 data-i18n="exp4Title">Java Developer Analyst</h3>
+          <p  data-i18n="exp4Desc">
+            Developed SOA-based enterprise applications for library management systems. Implemented search engines with Lucene/Solr. Designed JPA/Hibernate persistence layers.
+          </p>
+          <div class="exp-tags">
+            <span class="tag">Java</span>
+            <span class="tag">SOA</span>
+            <span class="tag">Lucene</span>
+            <span class="tag">Hibernate</span>
+            <span class="tag">Agile</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="sec-label" data-i18n="skillsLabel">04 — Skills</div>
+      <h2 data-i18n="skillsHeading">My <em>toolkit.</em></h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title" data-i18n="skillLang">Languages & Core</div>
+          <ul class="skill-list">
+            <li>Java 11+</li><li>Java EE 8</li><li>Spring Boot</li><li>Spring Framework</li><li>Spring Cloud</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title" data-i18n="skillFront">Integration & Messaging</div>
+          <ul class="skill-list">
+            <li>Apache Camel</li><li>JMS / ActiveMQ</li><li>RESTful APIs</li><li>OpenAPI</li><li>SOAP</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title" data-i18n="skillBack">Data & Infrastructure</div>
+          <ul class="skill-list">
+            <li>PostgreSQL</li><li>Oracle</li><li>MySQL</li><li>JPA / Hibernate</li><li>AWS EC2</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title" data-i18n="skillInfra">Tools & Practices</div>
+          <ul class="skill-list">
+            <li>Jenkins</li><li>Git / Bitbucket</li><li>Agile (Scrum, SAFe)</li><li>Jira</li><li>TDD</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="sec-label" data-i18n="projLabel">05 — Projects</div>
+      <h2 data-i18n="projHeading">Things I've <em>built.</em></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-type" data-i18n="proj1Type">Healthcare Systems</div>
+          <h3>Patient-Facing Applications</h3>
+          <p  data-i18n="proj1Desc">High-availability microservices architecture for patient-facing and primary care applications, handling critical healthcare workflows with custom Spring-based rule engines.</p>
+          <div class="exp-tags" style="margin-bottom:16px">
+            <span class="tag">Spring Boot</span><span class="tag">Microservices</span><span class="tag">Healthcare</span>
+          </div>
+          <a href="#" class="project-link" data-i18n="proj1Link">Healthcare sector</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-type" data-i18n="proj2Type">API Integration Platform</div>
+          <h3>RESTful API Governance</h3>
+          <p  data-i18n="proj2Desc">RESTful API design and governance using OpenAPI specifications. Extending platform integrations with third-party providers and external enterprise clients in distributed healthcare environments.</p>
+          <div class="exp-tags" style="margin-bottom:16px">
+            <span class="tag">OpenAPI</span><span class="tag">REST</span><span class="tag">Integration</span>
+          </div>
+          <a href="#" class="project-link" data-i18n="proj2Link">Technical Lead work</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-type" data-i18n="proj3Type">Messaging Architecture</div>
+          <h3>Event-Driven Systems</h3>
+          <p  data-i18n="proj3Desc">Event-driven integration systems using JMS, ActiveMQ, and Apache Camel. Building fault-tolerant architectures for high-volume clinical messaging with optimised throughput and minimal latency.</p>
+          <div class="exp-tags" style="margin-bottom:16px">
+            <span class="tag">JMS</span><span class="tag">ActiveMQ</span><span class="tag">Apache Camel</span>
+          </div>
+          <a href="#" class="project-link" data-i18n="proj3Link">Integration expertise</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-type" data-i18n="proj4Type">CI/CD & Automation</div>
+          <h3>DevOps Pipeline</h3>
+          <p  data-i18n="proj4Desc">Automated deployment pipelines and service health monitoring using PowerShell scripting. Managing CI/CD workflows in AWS environments with Jenkins, ensuring reliable delivery of healthcare applications.</p>
+          <div class="exp-tags" style="margin-bottom:16px">
+            <span class="tag">Jenkins</span><span class="tag">AWS</span><span class="tag">PowerShell</span>
+          </div>
+          <a href="#" class="project-link" data-i18n="proj4Link">DevOps practices</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies">
+      <div class="sec-label" data-i18n="hobbiesLabel">06 — Beyond code</div>
+      <h2 data-i18n="hobbiesHeading">What I <em>love.</em></h2>
+      <div class="hobbies-grid">
+
+        <div class="hobby-card">
+          <span class="hobby-icon">📷</span>
+          <div class="hobby-name" data-i18n="hobby1Name">Photography</div>
+          <p class="hobby-desc"   data-i18n="hobby1Desc">Street and landscape photography. I see the world through light and shadow.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">🧗</span>
+          <div class="hobby-name" data-i18n="hobby2Name">Rock Climbing</div>
+          <p class="hobby-desc"   data-i18n="hobby2Desc">Bouldering and sport climbing. Problem-solving with your whole body.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">📚</span>
+          <div class="hobby-name" data-i18n="hobby3Name">Reading</div>
+          <p class="hobby-desc"   data-i18n="hobby3Desc">Sci-fi, essays, and anything about the philosophy of technology.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">🎵</span>
+          <div class="hobby-name" data-i18n="hobby4Name">Music</div>
+          <p class="hobby-desc"   data-i18n="hobby4Desc">Playing guitar and exploring everything from jazz to electronic.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">🌍</span>
+          <div class="hobby-name" data-i18n="hobby5Name">Travel</div>
+          <p class="hobby-desc"   data-i18n="hobby5Desc">Slow travel with a focus on local culture, food, and architecture.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">🔧</span>
+          <div class="hobby-name" data-i18n="hobby6Name">Tinkering</div>
+          <p class="hobby-desc"   data-i18n="hobby6Desc">Home automation, electronics, and building things with my hands.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p data-i18n="footerCopy">© 2025 Adrián Salas. Built with intention.</p>
+    <p><a href="mailto:asalgav@gmail.com">asalgav@gmail.com</a></p>
+  </footer>
+
+  <!-- Scripts (type="module" for ES imports) -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
