@@ -130,10 +130,10 @@ const translations = {
     en: 'Street and landscape photography. I see the world through light and shadow.',
     es: 'Fotografía callejera y de paisajes. Veo el mundo a través de la luz y la sombra.',
   },
-  hobby2Name: { en: 'Rock Climbing', es: 'Escalada' },
+  hobby2Name: { en: 'Triathlon', es: 'Triatlón' },
   hobby2Desc: {
-    en: 'Bouldering and sport climbing. Problem-solving with your whole body.',
-    es: 'Búlder y escalada deportiva. Resolución de problemas con todo el cuerpo.',
+    en: 'Swimming, cycling, and running. Training for and competing in triathlons keeps me disciplined and focused.',
+    es: 'Natación, ciclismo y carrera. Entrenar y competir en triatlones me mantiene disciplinado y enfocado.',
   },
   hobby3Name: { en: 'Reading', es: 'Lectura' },
   hobby3Desc: {
@@ -154,6 +154,16 @@ const translations = {
   hobby6Desc: {
     en: 'Home automation, electronics, and building things with my hands.',
     es: 'Domótica, electrónica y construir cosas con las manos.',
+  },
+  hobby7Name: { en: 'Family', es: 'Familia' },
+  hobby7Desc: {
+    en: 'Spending time with my kids and wife. They give me the energy and strength to face any challenge.',
+    es: 'Disfrutar del tiempo con mis hijos y mi mujer. Me dan la energía y la fuerza para afrontar cualquier reto.',
+  },
+  hobby8Name: { en: 'Hiking', es: 'Senderismo' },
+  hobby8Desc: {
+    en: 'At least once a month, a day trip hiking with an enthusiastic team I\'m proud to belong to.',
+    es: 'Al menos una vez al mes, una ruta de senderismo con un equipo entusiasta al que me enorgullece pertenecer.',
   },
 
   /* ── FOOTER ── */
