@@ -142,8 +142,8 @@ const translations = {
   },
   hobby4Name: { en: 'Music', es: 'Música' },
   hobby4Desc: {
-    en: 'Playing guitar and exploring everything from jazz to electronic.',
-    es: 'Toco la guitarra y exploro desde el jazz hasta la música electrónica.',
+    en: 'Listening to music helps me focus and stay productive. A great playlist makes any task better.',
+    es: 'Escuchar música me ayuda a concentrarme y ser más productivo. Una buena playlist mejora cualquier tarea.',
   },
   hobby5Name: { en: 'Travel', es: 'Viajes' },
   hobby5Desc: {
