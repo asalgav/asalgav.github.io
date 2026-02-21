@@ -10,16 +10,27 @@
  *  5. Add allowed emails to ALLOWED_EMAILS
  */
 
-// Replace with your Firebase project values
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey:            "IzaSyBTj2SzV_geJ3rm-Kj_t8H2NNICzGy8MiY",
-  authDomain:        "asalgav-2e368.firebaseapp.com",
-  projectId:         "asalgav-2e368",
-  storageBucket:     "asalgav-2e368.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId:             "1:148763717598:web:fedfc5700a288b31e0374f"
+  apiKey: "AIzaSyBTj2SzV_geJ3rm-Kj_t8H2NNICzGy8MiY",
+  authDomain: "asalgav-2e368.firebaseapp.com",
+  projectId: "asalgav-2e368",
+  storageBucket: "asalgav-2e368.firebasestorage.app",
+  messagingSenderId: "148763717598",
+  appId: "1:148763717598:web:fedfc5700a288b31e0374f",
+  measurementId: "G-6Y9ZLG1H1Z"
 };
 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 // Only these emails may create a new account via the sign-up form.
 // Existing users (created in Firebase Console) can always sign in.
 const ALLOWED_EMAILS = [
