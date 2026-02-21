@@ -36,12 +36,15 @@
         <li><a href="#skills">              <span class="dot"></span><span data-i18n="navSkills">Skills</span></a></li>
         <li><a href="#projects">            <span class="dot"></span><span data-i18n="navProjects">Projects</span></a></li>
         <li><a href="#hobbies">             <span class="dot"></span><span data-i18n="navHobbies">Hobbies</span></a></li>
+        <li class="auth-hidden" id="nav-private-li"><a href="#private"><span class="dot"></span><span data-i18n="navPrivate">Private</span></a></li>
       </ul>
     </div>
     <div class="nav-social">
       <a href="https://github.com/asalgav" target="_blank" rel="noopener">GitHub</a>
       <a href="https://linkedin.com/in/asalgav" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:asalgav@gmail.com">Email</a>
+      <button class="nav-auth-btn" id="nav-signin-btn" onclick="openAuthModal('signin')" data-i18n="authSignIn">Sign in</button>
+      <button class="nav-auth-btn auth-hidden" id="nav-signout-btn" onclick="handleSignOut()" data-i18n="authSignOut">Sign out</button>
     </div>
   </nav>
 
@@ -53,6 +56,7 @@
     <a href="#skills"     data-i18n="navSkills">Skills</a>
     <a href="#projects"   data-i18n="navProjects">Work</a>
     <a href="#hobbies"    data-i18n="navHobbies">More</a>
+    <a href="#private" class="auth-hidden" id="mobile-nav-private" data-i18n="navPrivate">Private</a>
   </nav>
 
   <!-- ════════════════════════════════════════════
@@ -325,6 +329,27 @@
       </div>
     </section>
 
+    <!-- PRIVATE -->
+    <section id="private" class="auth-hidden">
+      <div class="sec-label" data-i18n="privateLabel">07 — Private</div>
+      <h2 data-i18n="privateHeading">Private <em>area.</em></h2>
+      <p class="private-welcome">Welcome back, <strong id="private-welcome-email"></strong></p>
+
+      <div class="private-resume-card">
+        <div>
+          <div class="project-type" data-i18n="privateResumeTitle">Resume / CV</div>
+          <p data-i18n="privateResumeDesc">Download the full version of my CV.</p>
+        </div>
+        <a href="assets/resume.pdf" class="auth-btn" download data-i18n="privateDownload">Download PDF</a>
+      </div>
+
+      <p class="private-note">Place your resume at <code>assets/resume.pdf</code> to enable download.</p>
+
+      <div class="private-signout">
+        <button onclick="handleSignOut()" class="auth-btn auth-btn-secondary" data-i18n="authSignOut">Sign out</button>
+      </div>
+    </section>
+
   </main>
 
   <!-- ── FOOTER ── -->
@@ -332,6 +357,31 @@
     <p data-i18n="footerCopy">© 2025 Adrián Salas. Built with intention.</p>
     <p><a href="mailto:asalgav@gmail.com">asalgav@gmail.com</a></p>
   </footer>
+  <!-- ── AUTH MODAL ── -->
+  <div id="auth-modal-overlay" class="auth-modal-overlay auth-hidden" onclick="handleOverlayClick(event)" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+    <div class="auth-modal">
+      <button class="auth-close" onclick="closeAuthModal()" aria-label="Close">&times;</button>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="auth-tab-signin" onclick="switchAuthTab('signin')" data-i18n="authSignIn">Sign in</button>
+        <button class="auth-tab"        id="auth-tab-signup" onclick="switchAuthTab('signup')" data-i18n="authSignUp">Sign up</button>
+      </div>
+
+      <form class="auth-form" onsubmit="handleAuthSubmit(event)">
+        <input type="email"    id="auth-email"    placeholder="Email"    required autocomplete="email">
+        <input type="password" id="auth-password" placeholder="Password" required autocomplete="current-password" minlength="6">
+        <div class="auth-error" id="auth-error" role="alert"></div>
+        <button type="submit" class="auth-btn" id="auth-submit-btn" data-i18n="authSignIn">Sign in</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Firebase SDK (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="js/auth-config.js"></script>
+  <script src="js/auth.js"></script>
+
   <!-- Scripts (type="module" for ES imports) -->
   <script type="module" src="js/main.js"></script>
 

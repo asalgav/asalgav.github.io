@@ -166,6 +166,19 @@ const translations = {
     es: 'Al menos una vez al mes, una ruta de senderismo con un equipo entusiasta al que me enorgullece pertenecer.',
   },
 
+  /* ── PRIVATE SECTION ── */
+  navPrivate:          { en: 'Private',                              es: 'Privado'                         },
+  privateLabel:        { en: '07 — Private',                        es: '07 — Privado'                    },
+  privateHeading:      { en: 'Private <em>area.</em>',              es: 'Área <em>privada.</em>'           },
+  privateResumeTitle:  { en: 'Resume / CV',                         es: 'Currículum'                      },
+  privateResumeDesc:   { en: 'Download the full version of my CV.', es: 'Descarga la versión completa de mi CV.' },
+  privateDownload:     { en: 'Download PDF',                        es: 'Descargar PDF'                   },
+
+  /* ── AUTH ── */
+  authSignIn:  { en: 'Sign in',   es: 'Iniciar sesión' },
+  authSignUp:  { en: 'Sign up',   es: 'Registrarse'    },
+  authSignOut: { en: 'Sign out',  es: 'Cerrar sesión'  },
+
   /* ── FOOTER ── */
   footerCopy: {
     en: '© 2025 Adrián Salas. Built with intention.',
