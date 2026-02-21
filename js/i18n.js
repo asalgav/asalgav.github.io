@@ -46,7 +46,7 @@ const translations = {
   },
   aboutP1: {
     en: "Based in Málaga, Spain, I work at the intersection of software engineering and technical leadership. With over 15 years of experience, I specialise in managing technical teams and contributing to cloud computing strategies, with a focus on fostering collaboration, driving innovation, and ensuring high-quality software delivery.",
-    es: 'Basado en Málaga, España, trabajo en la intersección de la ingeniería de software y el liderazgo técnico. Con más de 15 años de experiencia, me especializo en la gestión de equipos técnicos y en la contribución a estrategias de computación en la nube, fomentando la colaboración, impulsando la innovación y garantizando una entrega de software de alta calidad.',
+    es: 'Establecido en Málaga, España, trabajo en la intersección de la ingeniería de software y el liderazgo técnico. Con más de 15 años de experiencia, me especializo en la gestión de equipos técnicos y en la contribución a estrategias de computación en la nube, fomentando la colaboración, impulsando la innovación y garantizando una entrega de software de alta calidad.',
   },
   aboutP2: {
     en: "Working in healthcare technology has given me a deep appreciation for the responsibility that comes with handling patient information. I place strong emphasis on code security, vulnerability management, and compliance — ensuring that every system we build meets the highest standards for data protection and patient safety. I'm also passionate about the performance and reliability of high-volume messaging systems.",
