@@ -172,7 +172,8 @@ const translations = {
   privateHeading:      { en: 'Private <em>area.</em>',              es: 'Área <em>privada.</em>'           },
   privateResumeTitle:  { en: 'Resume / CV',                         es: 'Currículum'                      },
   privateResumeDesc:   { en: 'Download the full version of my CV.', es: 'Descarga la versión completa de mi CV.' },
-  privateDownload:     { en: 'Download PDF',                        es: 'Descargar PDF'                   },
+  privateDownloadEN:   { en: 'Download EN',                         es: 'Descargar EN'                    },
+  privateDownloadES:   { en: 'Download ES',                         es: 'Descargar ES'                   },
 
   /* ── AUTH ── */
   authSignIn:  { en: 'Sign in',   es: 'Iniciar sesión' },
