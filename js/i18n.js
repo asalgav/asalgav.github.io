@@ -81,6 +81,12 @@ const translations = {
     es: 'Desarrollo de aplicaciones empresariales basadas en SOA para sistemas de gestión de bibliotecas. Implementación de motores de búsqueda con Lucene/Solr. Diseño de capas de persistencia con JPA/Hibernate. Trabajo en entornos Agile estructurados.',
   },
 
+  exp5Title: { en: 'J2EE Programmer — Web Developer / Designer', es: 'Programador J2EE — Desarrollador / Diseñador Web' },
+  exp5Desc: {
+    en: 'Analysis, design and implementation of Sevilla\'s City Council management and administration platform (Project ALBA — Tax Information and Collection Integrated System). J2EE development using EJB 3.0, Servlets, JSF, Ajax and JSP. Database integration with Oracle 9i and PL/SQL procedures.',
+    es: 'Análisis, diseño e implementación de la plataforma de gestión y administración del Ayuntamiento de Sevilla (Proyecto ALBA — Sistema Integrado de Información y Recaudación Tributaria). Desarrollo J2EE con EJB 3.0, Servlets, JSF, Ajax y JSP. Integración con Oracle 9i y procedimientos PL/SQL.',
+  },
+
   /* ── SKILLS ── */
   skillsLabel:   { en: '04 — Technical Expertise',     es: '04 — Competencias Técnicas'   },
   skillsHeading: { en: 'My <em>toolkit.</em>', es: 'Mi <em>arsenal.</em>' },
