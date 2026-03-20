@@ -414,6 +414,46 @@
         </div>
       </div>
 
+      <!-- Analytics Dashboard -->
+      <div class="analytics-dashboard">
+        <div class="analytics-header">
+          <div>
+            <div class="project-type" data-i18n="analyticsLabel">Site Analytics</div>
+            <p id="analytics-summary" class="analytics-summary"></p>
+          </div>
+          <div class="analytics-controls">
+            <select id="analytics-days" class="analytics-select">
+              <option value="7"  data-i18n="analytics7d">Last 7 days</option>
+              <option value="14" data-i18n="analytics14d">Last 14 days</option>
+              <option value="30" selected data-i18n="analytics30d">Last 30 days</option>
+              <option value="90" data-i18n="analytics90d">Last 90 days</option>
+            </select>
+            <label class="analytics-toggle">
+              <input type="checkbox" id="analytics-show-ips" checked>
+              <span data-i18n="analyticsShowIPs">Show IP log</span>
+            </label>
+          </div>
+        </div>
+        <div class="analytics-chart-wrap">
+          <canvas id="analytics-chart"></canvas>
+        </div>
+        <div id="analytics-table-wrap" class="analytics-table-wrap">
+          <table class="analytics-table">
+            <thead>
+              <tr>
+                <th data-i18n="analyticsColDate">Date &amp; Time</th>
+                <th data-i18n="analyticsColIP">IP Address</th>
+                <th data-i18n="analyticsColUA">User Agent</th>
+              </tr>
+            </thead>
+            <tbody id="analytics-tbody">
+              <tr><td colspan="3" style="text-align:center;color:#555;padding:1.2rem">Loading…</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="analytics-error" id="analytics-error"></p>
+      </div>
+
       <div class="private-signout">
         <button onclick="handleSignOut()" class="auth-btn auth-btn-secondary" data-i18n="authSignOut">Sign out</button>
       </div>
@@ -448,8 +488,12 @@
   <!-- Firebase SDK (compat) -->
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
   <script src="js/auth-config.js"></script>
   <script src="js/auth.js"></script>
+  <script src="js/analytics.js"></script>
 
   <!-- Scripts (type="module" for ES imports) -->
   <script type="module" src="js/main.js"></script>

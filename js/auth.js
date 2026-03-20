@@ -34,6 +34,7 @@
         signinBtn        && signinBtn.classList.add('auth-hidden');
         signoutBtn       && signoutBtn.classList.remove('auth-hidden');
         if (welcomeEmail) welcomeEmail.textContent = user.email;
+        if (window.initAnalyticsDashboard) window.initAnalyticsDashboard();
       } else {
         privateSection   && privateSection.classList.add('auth-hidden');
         privateNavLi     && privateNavLi.classList.add('auth-hidden');

@@ -181,6 +181,17 @@ const translations = {
   privateDownloadEN:   { en: 'Download EN',                         es: 'Descargar EN'                    },
   privateDownloadES:   { en: 'Download ES',                         es: 'Descargar ES'                   },
 
+  /* ── ANALYTICS ── */
+  analyticsLabel:   { en: 'Site Analytics',      es: 'Analítica del Sitio'   },
+  analytics7d:      { en: 'Last 7 days',         es: 'Últimos 7 días'        },
+  analytics14d:     { en: 'Last 14 days',        es: 'Últimos 14 días'       },
+  analytics30d:     { en: 'Last 30 days',        es: 'Últimos 30 días'       },
+  analytics90d:     { en: 'Last 90 days',        es: 'Últimos 90 días'       },
+  analyticsShowIPs: { en: 'Show IP log',         es: 'Mostrar registro IPs'  },
+  analyticsColDate: { en: 'Date &amp; Time',     es: 'Fecha y Hora'          },
+  analyticsColIP:   { en: 'IP Address',          es: 'Dirección IP'          },
+  analyticsColUA:   { en: 'User Agent',          es: 'Agente de usuario'     },
+
   /* ── AUTH ── */
   authSignIn:  { en: 'Sign in',   es: 'Iniciar sesión' },
   authSignUp:  { en: 'Sign up',   es: 'Registrarse'    },
